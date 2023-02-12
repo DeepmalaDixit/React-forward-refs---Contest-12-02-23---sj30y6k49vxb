@@ -4,6 +4,16 @@ import InputField from './InputField.js';
 const App = () => {
  
 //code here 
+ const newRef = useRef(null);
+ const [values, setValues] =useState("");
+ 
+ function settingValue(){
+  setValues(newRef.current.value);
+ }
+ 
+ function focusInput(){
+  newRef.current.focus();
+ }
 
 
  
